@@ -11,7 +11,7 @@ int main(void)
  exit(1);
  }
  printf("Enter a string:\n");
- if (fgets(s, 200, stdin) == NULL)
+ if (fgets(s, 200, stdin) == 0)
  perror("gets");
  else
  printf("you entered: %s\n", s);
